@@ -1,0 +1,52 @@
+{
+  "name": "domain-scanner",
+  "version": "0.0.1",
+  "description": "A node utility to scan a domain with various techniques.",
+  "homepage": "",
+  "author": {
+    "name": "b4dnewz",
+    "email": "filippo@codekraft.it",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "cli-tool",
+    "cli-command",
+    "scanner",
+    "osint"
+  ],
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "nsp": "^2.6.3",
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "b4dnewz/domain-scanner",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "commander": "^2.11.0",
+    "email-hunter": "^1.0.5",
+    "robots": "^0.10.1"
+  }
+}
