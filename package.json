@@ -20,11 +20,12 @@
   ],
   "devDependencies": {
     "coveralls": "^2.13.1",
-    "nsp": "^2.6.3",
+    "dotenv": "^4.0.0",
     "eslint": "^4.1.0",
     "eslint-config-xo-space": "^0.16.0",
     "jest": "^21.0.0",
-    "jest-cli": "^21.0.0"
+    "jest-cli": "^21.0.0",
+    "nsp": "^2.6.3"
   },
   "scripts": {
     "prepublish": "nsp check",
@@ -46,7 +47,8 @@
   "dependencies": {
     "async": "^2.5.0",
     "commander": "^2.11.0",
-    "email-hunter": "^1.0.5",
+    "email-hunter": "github:b4dnewz/email-hunter",
+    "mkdirp": "^0.5.1",
     "robots": "^0.10.1"
   }
 }
