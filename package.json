@@ -47,7 +47,7 @@
   "dependencies": {
     "async": "^2.5.0",
     "commander": "^2.11.0",
-    "email-hunter": "github:b4dnewz/email-hunter",
+    "hunter.io": "0.0.1",
     "mkdirp": "^0.5.1",
     "robots": "^0.10.1"
   }
