@@ -1,5 +1,11 @@
 const domainScanner = require('../lib/index.js');
 
-domainScanner('codekraft.it', {}, (err, response) => {
-  console.log('Response?', response);
+const options = {};
+
+domainScanner('codekraft.it', options, (err, response) => {
+  if (err) {
+    console.log('An error occurred:', err);
+  } else {
+    console.log('Response:', response);
+  }
 });
