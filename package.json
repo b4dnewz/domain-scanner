@@ -19,13 +19,13 @@
     "osint"
   ],
   "devDependencies": {
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.0",
     "dotenv": "^4.0.0",
-    "eslint": "^4.1.0",
+    "eslint": "^4.8.0",
     "eslint-config-xo-space": "^0.16.0",
-    "jest": "^21.0.0",
-    "jest-cli": "^21.0.0",
-    "nsp": "^2.6.3"
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "nsp": "^2.8.1"
   },
   "scripts": {
     "prepublish": "nsp check",
@@ -47,8 +47,7 @@
   "dependencies": {
     "async": "^2.5.0",
     "commander": "^2.11.0",
-    "hunter.io": "0.0.1",
-    "mkdirp": "^0.5.1",
-    "robots": "^0.10.1"
+    "hunter.io": "0.2.3",
+    "robots-parse": "0.0.2"
   }
 }
