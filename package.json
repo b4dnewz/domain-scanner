@@ -48,6 +48,7 @@
     "async": "^2.5.0",
     "commander": "^2.11.0",
     "hunter.io": "0.2.3",
+    "pwned-api": "0.0.2",
     "robots-parse": "0.0.2"
   }
 }
