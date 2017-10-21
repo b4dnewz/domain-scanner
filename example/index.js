@@ -3,6 +3,7 @@ require('dotenv').config();
 const domainScanner = require('../lib/index.js');
 
 const options = {
+  // exclude: ['emails'],
   keys: {
     hunterio: process.env.HUNTER_APIKEY
   }

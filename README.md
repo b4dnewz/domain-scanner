@@ -30,11 +30,20 @@ domainScanner('Rainbow', options, (err, results) => {
 An array with the names of the sections you want to scan, leave empty to scan all sections. Available sections are:
 * __details__: Will perform some system based evaluations against the domain.
 * __emails__: Will scan the domain looking for known emails with [node-emailhunter](https://github.com/b4dnewz/node-emailhunter)
+* __breaches__: Will check the [HaveIBeenPwned](https://haveibeenpwned.com/DomainSearch) database against the domain
 * __robots__: Will scan the domain robots.txt file with [robots-parse](https://github.com/b4dnewz/robots-parse)
 
 ```js
 const options = {
-  sections: ['details', 'robots']
+  sections: ['details', 'emails', 'breaches', 'robots']
+};
+```
+
+#### exclude
+An array of sections to exclude from the tasks of the scanner:
+```js
+const options = {
+  exclude: ['emails']
 };
 ```
 
@@ -47,6 +56,7 @@ const options = {
   }
 };
 ```
+Possible keys for now: _hunterio_
 
 ## License
 
