@@ -50,6 +50,6 @@
     "hunter.io": "0.2.3",
     "pwned-api": "0.0.2",
     "robots-parse": "0.0.2",
-    "subquest": "github:b4dnewz/subquest"
+    "subquest": "^1.5.0"
   }
 }
