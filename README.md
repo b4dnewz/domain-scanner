@@ -1,7 +1,8 @@
-# domain-scanner
+![banner](banner.jpg)
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
+# domain-scanner
 > A node utility to scan a domain with various techniques.
 
 ## Installation
