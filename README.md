@@ -21,7 +21,7 @@ const options = {
   keys: {}
 };
 
-domainScanner('Rainbow', options, (err, results) => {
+domainScanner('codekraft.it', options, (err, results) => {
   console.log(results);
 });
 ```
@@ -33,6 +33,7 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __emails__: Will scan the domain looking for known emails with [node-emailhunter](https://github.com/b4dnewz/node-emailhunter)
 * __breaches__: Will check the [HaveIBeenPwned](https://haveibeenpwned.com/DomainSearch) database against the domain
 * __robots__: Will scan the domain robots.txt file with [robots-parse](https://github.com/b4dnewz/robots-parse)
+* __subdomains__: Will enumerate all hostname subdomains using [subquest](https://github.com/skepticfx/subquest)
 
 ```js
 const options = {

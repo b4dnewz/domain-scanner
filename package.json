@@ -1,6 +1,6 @@
 {
   "name": "domain-scanner",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A node utility to scan a domain with various techniques.",
   "homepage": "",
   "author": {
@@ -50,6 +50,6 @@
     "hunter.io": "0.2.3",
     "pwned-api": "0.0.2",
     "robots-parse": "0.0.2",
-    "subquest": "github:b4dnewz/subquest"
+    "subquest": "^1.5.0"
   }
 }
