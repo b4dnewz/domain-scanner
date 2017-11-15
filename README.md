@@ -1,6 +1,6 @@
 ![banner](banner.jpg)
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities](https://snyk.io/test/github/b4dnewz/domain-scanner/badge.svg)](https://snyk.io/test/github/b4dnewz/domain-scanner)
 
 # domain-scanner
 > A node utility to scan a domain with various techniques.
