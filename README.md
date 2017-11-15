@@ -17,7 +17,7 @@ The usage is simple, just pass to the scanner the domain you want to scan and so
 const domainScanner = require('domain-scanner');
 
 const options = {
-  section: [],
+  sections: [],
   keys: {}
 };
 
