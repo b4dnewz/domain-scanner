@@ -17,7 +17,8 @@ The usage is simple, just pass to the scanner the domain you want to scan and so
 const domainScanner = require('domain-scanner');
 
 const options = {
-  section: [],
+  sections: [],
+  exclude: [],
   keys: {}
 };
 
@@ -34,10 +35,11 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __breaches__: Will check the [HaveIBeenPwned](https://haveibeenpwned.com/DomainSearch) database against the domain
 * __robots__: Will scan the domain robots.txt file with [robots-parse](https://github.com/b4dnewz/robots-parse)
 * __subdomains__: Will enumerate all hostname subdomains using [subquest](https://github.com/skepticfx/subquest)
+* __threats__: Will scan the domain using [Google Safe Browsing](https://developers.google.com/safe-browsing/) API looking for known threats
 
 ```js
 const options = {
-  sections: ['details', 'emails', 'breaches', 'robots']
+  sections: ['details', 'emails', 'breaches', 'robots', 'subdomains', 'threats']
 };
 ```
 
@@ -54,11 +56,23 @@ An object with the API keys for the services involved in the scan. For example t
 ```js
 const options = {
   keys: {
-    hunterio: '<some-api-key>'
+    hunterio: '<some-api-key>',
+    google: '<some-api-key>'
   }
 };
 ```
-Possible keys for now: _hunterio_
+Possible keys for now: _hunterio_, _google_
+
+---
+
+## Contributing
+
+1. Create an issue and describe your idea
+2. Fork the project (https://github.com/b4dnewz/domain-scanner/fork)
+3. Create your feature branch (`git checkout -b my-new-task`)
+4. Commit your changes (`git commit -am 'Add some task'`)
+5. Publish the branch (`git push origin my-new-task`)
+6. Create a new Pull Request
 
 ## License
 
