@@ -6,7 +6,7 @@
   "author": {
     "name": "b4dnewz",
     "email": "filippo@codekraft.it",
-    "url": ""
+    "url": "https://b4dnewz.github.io/"
   },
   "files": [
     "lib"
@@ -37,6 +37,9 @@
     "env": {
       "jest": true,
       "node": true
+    },
+    "rules": {
+      "capitalized-comments": "off"
     }
   },
   "repository": "b4dnewz/domain-scanner",
