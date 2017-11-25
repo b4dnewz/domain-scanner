@@ -13,10 +13,9 @@
   ],
   "main": "lib/index.js",
   "keywords": [
-    "cli-tool",
-    "cli-command",
     "scanner",
-    "osint"
+    "osint",
+    "domain-scanner"
   ],
   "devDependencies": {
     "coveralls": "^3.0.0",
@@ -49,7 +48,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "^2.6.0",
-    "commander": "^2.11.0",
+    "geoip-lite": "^1.2.1",
     "hunter.io": "0.2.4",
     "pwned-api": "0.0.2",
     "request": "^2.83.0",
