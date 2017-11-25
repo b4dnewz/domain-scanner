@@ -1,12 +1,15 @@
 ![banner](banner.jpg)
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities](https://snyk.io/test/github/b4dnewz/domain-scanner/badge.svg)](https://snyk.io/test/github/b4dnewz/domain-scanner)
-
-# domain-scanner
-> A node utility to scan a domain with various techniques.
+<p align="center">
+  <a href="https://npmjs.org/package/domain-scanner"><img src="https://badge.fury.io/js/domain-scanner.svg"></a>
+  <a href="https://travis-ci.org/b4dnewz/domain-scanner"><img src="https://travis-ci.org/b4dnewz/domain-scanner.svg?branch=master"></a>
+  <a href="https://david-dm.org/b4dnewz/domain-scanner"><img src="https://david-dm.org/b4dnewz/domain-scanner.svg?theme=shields.io"></a>
+  <a href="https://coveralls.io/r/b4dnewz/domain-scanner"><img src="https://coveralls.io/repos/b4dnewz/domain-scanner/badge.svg"></a>
+  <a href="https://snyk.io/test/github/b4dnewz/domain-scanner"><img src="https://snyk.io/test/github/b4dnewz/domain-scanner/badge.svg"></a>
+</p>
+<p align="center">A node utility to scan a domain with various techniques.</p>
 
 ## Installation
-
 ```sh
 $ npm install --save domain-scanner
 ```
@@ -63,6 +66,12 @@ const options = {
 ```
 Possible keys for now: _hunterio_, _google_
 
+## Looking for the cli tool?
+If you want to use it from the command line as a cli tool you have to download [domain-scanner-cli](https://github.com/b4dnewz/domain-scanner-cli) module.
+```sh
+$ npm install -g domain-scanner-cli
+```
+
 ---
 
 ## Contributing
@@ -76,14 +85,4 @@ Possible keys for now: _hunterio_, _google_
 
 ## License
 
-MIT © b4dnewz
-
-
-[npm-image]: https://badge.fury.io/js/domain-scanner.svg
-[npm-url]: https://npmjs.org/package/domain-scanner
-[travis-image]: https://travis-ci.org/b4dnewz/domain-scanner.svg?branch=master
-[travis-url]: https://travis-ci.org/b4dnewz/domain-scanner
-[daviddm-image]: https://david-dm.org/b4dnewz/domain-scanner.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/b4dnewz/domain-scanner
-[coveralls-image]: https://coveralls.io/repos/b4dnewz/domain-scanner/badge.svg
-[coveralls-url]: https://coveralls.io/r/b4dnewz/domain-scanner
+MIT © [b4dnewz](https://b4dnewz.github.io/)
