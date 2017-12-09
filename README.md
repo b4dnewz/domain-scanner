@@ -36,13 +36,14 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __details__: Will perform some system based evaluations against the domain.
 * __emails__: Will scan the domain looking for known emails with [node-emailhunter](https://github.com/b4dnewz/node-emailhunter)
 * __breaches__: Will check the [HaveIBeenPwned](https://haveibeenpwned.com/DomainSearch) database against the domain
+* __certificate__: SSL Certificate test and verification using [node-ssllabs](https://github.com/keithws/node-ssllabs) talking with SSL Labs API
 * __robots__: Will scan the domain robots.txt file with [robots-parse](https://github.com/b4dnewz/robots-parse)
 * __subdomains__: Will enumerate all hostname subdomains using [subquest](https://github.com/skepticfx/subquest)
 * __threats__: Will scan the domain using [Google Safe Browsing](https://developers.google.com/safe-browsing/) API looking for known threats
 
 ```js
 const options = {
-  sections: ['details', 'emails', 'breaches', 'robots', 'subdomains', 'threats']
+  sections: ['details', 'emails', 'breaches', 'certificate', 'robots', 'subdomains', 'threats']
 };
 ```
 
