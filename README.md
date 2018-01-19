@@ -7,11 +7,13 @@
   <a href="https://coveralls.io/r/b4dnewz/domain-scanner"><img src="https://coveralls.io/repos/b4dnewz/domain-scanner/badge.svg"></a>
   <a href="https://snyk.io/test/github/b4dnewz/domain-scanner"><img src="https://snyk.io/test/github/b4dnewz/domain-scanner/badge.svg"></a>
 </p>
+
 <p align="center">A node utility to scan a domain with various techniques.</p>
 
 ## Installation
 ```sh
-$ npm install --save domain-scanner
+$ npm install domain-scanner
+$ yarn add domain-scanner
 ```
 
 ## Usage
@@ -40,10 +42,11 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __robots__: Will scan the domain robots.txt file with [robots-parse](https://github.com/b4dnewz/robots-parse)
 * __subdomains__: Will enumerate all hostname subdomains using [subquest](https://github.com/skepticfx/subquest)
 * __threats__: Will scan the domain using [Google Safe Browsing](https://developers.google.com/safe-browsing/) API looking for known threats
+* __tld__: Will scan all the other [root TLDs](https://wiki.mozilla.org/TLD_List) possibilities for a given domain
 
 ```js
 const options = {
-  sections: ['details', 'emails', 'breaches', 'certificate', 'robots', 'subdomains', 'threats']
+  sections: ['details', 'emails', 'breaches', 'certificate', 'robots', 'subdomains', 'threats', 'tld']
 };
 ```
 
@@ -81,8 +84,9 @@ $ npm install -g domain-scanner-cli
 2. Fork the project (https://github.com/b4dnewz/domain-scanner/fork)
 3. Create your feature branch (`git checkout -b my-new-task`)
 4. Commit your changes (`git commit -am 'Add some task'`)
-5. Publish the branch (`git push origin my-new-task`)
-6. Create a new Pull Request
+5. Write some test (`npm run test`)
+6. Publish the branch (`git push origin my-new-task`)
+7. Create a new Pull Request
 
 ## License
 
