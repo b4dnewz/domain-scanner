@@ -22,6 +22,7 @@ The usage is simple, just pass to the scanner the domain you want to scan and so
 const domainScanner = require('domain-scanner');
 
 const options = {
+  deep: false,
   sections: [],
   exclude: [],
   keys: {}
@@ -69,6 +70,15 @@ const options = {
 };
 ```
 Possible keys for now: _hunterio_, _google_
+
+#### deep
+Perform additional tasks for the gathered results.
+For example test resulting emails with [node-pwned](https://github.com/b4dnewz/node-pwned) for breaches, or testing nested domain details informations.
+```js
+const options = {
+  deep: true
+};
+```
 
 ## Looking for the cli tool?
 If you want to use it from the command line as a cli tool you have to download [domain-scanner-cli](https://github.com/b4dnewz/domain-scanner-cli) module.
