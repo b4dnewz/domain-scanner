@@ -25,7 +25,10 @@ const options = {
   deep: false,
   sections: [],
   exclude: [],
-  keys: {}
+  keys: {
+    hunterio: '<api-key>',
+    google: '<api-key>'
+  }
 };
 
 domainScanner('codekraft.it', options, (err, results) => {
