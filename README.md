@@ -27,7 +27,8 @@ const options = {
   exclude: [],
   keys: {
     hunterio: '<api-key>',
-    google: '<api-key>'
+    google: '<api-key>',
+    virustotal: '<api-key>'
   }
 };
 
@@ -46,11 +47,12 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __robots__: Will scan the domain robots.txt file with [robots-parse](https://github.com/b4dnewz/robots-parse)
 * __subdomains__: Will enumerate all hostname subdomains using [subquest](https://github.com/skepticfx/subquest)
 * __threats__: Will scan the domain using [Google Safe Browsing](https://developers.google.com/safe-browsing/) API looking for known threats
+* __virustotal__: Will scan the domain using [Virus Total](https://developers.virustotal.com/v2.0/reference) APIv2 on domain/report endpoint
 * __tld__: Will scan all the other [root TLDs](https://wiki.mozilla.org/TLD_List) possibilities for a given domain
 
 ```js
 const options = {
-  sections: ['details', 'emails', 'breaches', 'certificate', 'robots', 'subdomains', 'threats', 'tld']
+  sections: ['details', 'emails', 'breaches', 'certificate', 'robots', 'subdomains', 'threats', 'virustotal', 'tld']
 };
 ```
 
@@ -67,12 +69,13 @@ An object with the API keys for the services involved in the scan. For example t
 ```js
 const options = {
   keys: {
-    hunterio: '<some-api-key>',
-    google: '<some-api-key>'
+    hunterio: '<api-key>',
+    google: '<api-key>',
+    virustotal: '<api-key>'
   }
 };
 ```
-Possible keys for now: _hunterio_, _google_
+Possible keys for now: _hunterio_, _google_, _virustotal_
 
 #### deep
 Perform additional tasks for the gathered results.
