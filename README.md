@@ -50,6 +50,7 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __virustotal__: Will scan the domain using [Virus Total](https://developers.virustotal.com/v2.0/reference) APIv2 on domain/report endpoint
 * __tld__: Will scan all the other [root TLDs](https://wiki.mozilla.org/TLD_List) possibilities for a given domain
 * __typosquotting__: Perform various typosquotting techniques and collect results
+* __archived__: Lookup the site using [Wayback Machine API](https://archive.org/help/wayback_api.php) looking for archived pages
 
 ```js
 const options = {
@@ -63,7 +64,8 @@ const options = {
     'threats',
     'virustotal',
     'tld',
-    'typosquotting'
+    'typosquotting',
+    'archived'
   ]
 };
 ```
