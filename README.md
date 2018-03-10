@@ -51,6 +51,7 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __tld__: Will scan all the other [root TLDs](https://wiki.mozilla.org/TLD_List) possibilities for a given domain
 * __typosquotting__: Perform various typosquotting techniques and collect results
 * __archived__: Lookup the site using [Wayback Machine API](https://archive.org/help/wayback_api.php) looking for archived pages
+* __ctl__: Find subdomains by abusing [Certificate Transparency](http://www.certificate-transparency.org/) logs
 
 ```js
 const options = {
@@ -65,7 +66,8 @@ const options = {
     'virustotal',
     'tld',
     'typosquotting',
-    'archived'
+    'archived',
+    'ctl'
   ]
 };
 ```
