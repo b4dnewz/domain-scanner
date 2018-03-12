@@ -54,6 +54,7 @@
     "pwned-api": "0.0.4",
     "request": "^2.83.0",
     "robots-parse": "0.0.4",
-    "subquest": "^1.5.3"
+    "subquest": "^1.5.3",
+    "typosquotter": "0.0.3"
   }
 }
