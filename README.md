@@ -13,7 +13,6 @@
 ## Installation
 ```sh
 $ npm install domain-scanner
-$ yarn add domain-scanner
 ```
 
 ## Usage
