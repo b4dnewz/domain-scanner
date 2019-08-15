@@ -1,9 +1,9 @@
 'use strict';
 
-const certificateTask = require('../tasks/certificate.js').exec;
+const certificateTask = require('../lib/tasks/certificate.js').exec;
 
 describe('Task: Certificate', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof certificateTask).toBe('function');

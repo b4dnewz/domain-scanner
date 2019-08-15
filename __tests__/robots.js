@@ -1,9 +1,9 @@
 'use strict';
 
-const robotsTask = require('../tasks/robots.js').exec;
+const robotsTask = require('../lib/tasks/robots.js').exec;
 
 describe('Task: Robots', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof robotsTask).toBe('function');

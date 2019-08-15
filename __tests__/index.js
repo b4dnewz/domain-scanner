@@ -1,9 +1,11 @@
 'use strict';
 
 const assert = require('assert');
-const domainScanner = require('../index.js');
+const domainScanner = require('../lib/index.js');
 
 describe('Domain Scanner', () => {
+  jest.setTimeout(30000);
+
   it('exports by default a function', () => {
     assert(typeof domainScanner === 'function', 'should export a function');
   });

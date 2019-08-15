@@ -1,9 +1,9 @@
 'use strict';
 
-const virusTotalTask = require('../tasks/virustotal').exec;
+const virusTotalTask = require('../lib/tasks/virustotal').exec;
 
 describe('Task: virustotal', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof virusTotalTask).toBe('function');

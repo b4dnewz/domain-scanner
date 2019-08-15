@@ -1,9 +1,9 @@
 'use strict';
 
-const threatsTask = require('../tasks/threats.js').exec;
+const threatsTask = require('../lib/tasks/threats.js').exec;
 
 describe('Task: Threats', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof threatsTask).toBe('function');

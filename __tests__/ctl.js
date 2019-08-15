@@ -1,9 +1,9 @@
 'use strict';
 
-const ctlTask = require('../tasks/ctl.js').exec;
+const ctlTask = require('../lib/tasks/ctl.js').exec;
 
 describe('Task: CTL', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof ctlTask).toBe('function');

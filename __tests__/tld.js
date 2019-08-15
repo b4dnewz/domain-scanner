@@ -1,10 +1,10 @@
 'use strict';
 
 // Subdomain scanner/brute
-const tldTask = require('../tasks/tld').exec;
+const tldTask = require('../lib/tasks/tld').exec;
 
 describe('Task: TLD', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof tldTask).toBe('function');

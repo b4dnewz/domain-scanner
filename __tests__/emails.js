@@ -1,9 +1,9 @@
 'use strict';
 
-const emailsTask = require('../tasks/emails.js');
+const emailsTask = require('../lib/tasks/emails.js');
 
 describe('Task: Emails', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof emailsTask.exec).toBe('function');

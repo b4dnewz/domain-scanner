@@ -1,9 +1,9 @@
 'use strict';
 
-const archivedTask = require('../tasks/archived.js').exec;
+const archivedTask = require('../lib/tasks/archived.js').exec;
 
 describe('Task: Archived', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof archivedTask).toBe('function');

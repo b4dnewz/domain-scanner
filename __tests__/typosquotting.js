@@ -1,9 +1,9 @@
 'use strict';
 
-const typosquottingTask = require('../tasks/typosquotting').exec;
+const typosquottingTask = require('../lib/tasks/typosquotting').exec;
 
 describe('Task: Typosquotting', () => {
-  jest.setTimeout(300000);
+  jest.setTimeout(30000);
 
   it('exports by default a function', () => {
     expect(typeof typosquottingTask).toBe('function');
