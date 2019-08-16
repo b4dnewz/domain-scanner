@@ -51,6 +51,7 @@ An array with the names of the sections you want to scan, leave empty to scan al
 * __typosquotting__: Perform various typosquotting techniques and collect results
 * __archived__: Lookup the site using [Wayback Machine API](https://archive.org/help/wayback_api.php) looking for archived pages
 * __ctl__: Find subdomains by abusing [Certificate Transparency](http://www.certificate-transparency.org/) logs
+* __tags__: Will scan the domain's tracking code footprint with [tag-recon](https://github.com/daehee/tag-recon) to discover connections with other affiliated websites
 
 ```js
 const options = {
@@ -66,7 +67,8 @@ const options = {
     'tld',
     'typosquotting',
     'archived',
-    'ctl'
+    'ctl',
+    'tags'
   ]
 };
 ```
@@ -86,11 +88,12 @@ const options = {
   keys: {
     hunterio: '<api-key>',
     google: '<api-key>',
-    virustotal: '<api-key>'
+    virustotal: '<api-key>',
+    spyonweb: '<api-key>'
   }
 };
 ```
-Possible keys for now: _hunterio_, _google_, _virustotal_
+Possible keys for now: _hunterio_, _google_, _virustotal_, _spyonweb_
 
 #### deep
 Perform additional tasks for the gathered results.
