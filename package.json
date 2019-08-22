@@ -1,6 +1,6 @@
 {
   "name": "domain-scanner",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A node utility to scan a domain with various techniques.",
   "homepage": "https://github.com/b4dnewz/domain-scanner",
   "author": {
