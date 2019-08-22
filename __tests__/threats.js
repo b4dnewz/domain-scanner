@@ -3,7 +3,7 @@
 const threatsTask = require('../lib/tasks/threats.js').exec;
 
 describe('Task: Threats', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof threatsTask).toBe('function');

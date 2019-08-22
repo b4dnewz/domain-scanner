@@ -3,7 +3,7 @@
 const typosquottingTask = require('../lib/tasks/typosquotting').exec;
 
 describe('Task: Typosquotting', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof typosquottingTask).toBe('function');

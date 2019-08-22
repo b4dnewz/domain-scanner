@@ -3,7 +3,7 @@
 const emailsTask = require('../lib/tasks/emails.js');
 
 describe('Task: Emails', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof emailsTask.exec).toBe('function');

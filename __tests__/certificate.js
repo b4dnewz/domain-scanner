@@ -3,7 +3,7 @@
 const certificateTask = require('../lib/tasks/certificate.js').exec;
 
 describe('Task: Certificate', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof certificateTask).toBe('function');

@@ -3,7 +3,7 @@
 const archivedTask = require('../lib/tasks/archived.js').exec;
 
 describe('Task: Archived', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof archivedTask).toBe('function');

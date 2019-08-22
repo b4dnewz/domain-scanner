@@ -3,7 +3,7 @@
 const ctlTask = require('../lib/tasks/ctl.js').exec;
 
 describe('Task: CTL', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof ctlTask).toBe('function');

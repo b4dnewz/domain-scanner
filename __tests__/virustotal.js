@@ -3,7 +3,7 @@
 const virusTotalTask = require('../lib/tasks/virustotal').exec;
 
 describe('Task: virustotal', () => {
-  jest.setTimeout(30000);
+  jest.setTimeout(60000);
 
   it('exports by default a function', () => {
     expect(typeof virusTotalTask).toBe('function');
