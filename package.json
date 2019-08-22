@@ -50,6 +50,7 @@
     "request": "^2.88.0",
     "robots-parse": "^0.0.6",
     "subquest": "^1.5.3",
+    "tag-recon": "^0.1.1",
     "typosquotter": "^0.0.7"
   },
   "devDependencies": {
