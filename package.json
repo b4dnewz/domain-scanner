@@ -18,14 +18,19 @@
     "domain-scanner"
   ],
   "scripts": {
-    "pretest": "eslint . --fix",
+    "pretest": "npm run lint",
+    "lint": "eslint . --fix",
     "test": "jest --coverage"
   },
   "eslintConfig": {
-    "extends": "xo-space",
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
     "env": {
       "jest": true,
-      "node": true
+      "node": true,
+      "es6": true
     },
     "rules": {
       "capitalized-comments": "off"
@@ -37,22 +42,21 @@
   },
   "license": "MIT",
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^3.1.0",
     "geoip-lite": "^1.3.7",
     "hunter.io": "0.2.7",
-    "node-ssllabs": "^0.5.0",
-    "pwned-api": "0.0.4",
-    "request": "^2.83.0",
-    "robots-parse": "0.0.4",
+    "node-ssllabs": "^1.1.2",
+    "pwned-api": "^0.0.6",
+    "request": "^2.88.0",
+    "robots-parse": "^0.0.6",
     "subquest": "^1.5.3",
-    "typosquotter": "0.0.3"
+    "typosquotter": "^0.0.7"
   },
   "devDependencies": {
-    "coveralls": "^3.0.0",
-    "dotenv": "^5.0.1",
-    "eslint": "^4.18.2",
-    "eslint-config-xo-space": "^0.18.0",
-    "jest": "^22.4.2",
-    "jest-cli": "^22.4.2"
+    "coveralls": "^3.0.6",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.1.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0"
   }
 }
