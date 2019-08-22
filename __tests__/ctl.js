@@ -9,7 +9,7 @@ describe('Task: CTL', () => {
     expect(typeof ctlTask).toBe('function');
   });
 
-  it('returns an objects of results', done => {
+  it('returns an array of results', done => {
     ctlTask('codekraft.it', {}).then(res => {
       expect(Array.isArray(res)).toBeTruthy();
       done();

@@ -20,7 +20,7 @@
   "scripts": {
     "pretest": "npm run lint",
     "lint": "eslint . --fix",
-    "test": "jest --coverage"
+    "test": "jest -i --coverage"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -50,7 +50,7 @@
     "request": "^2.88.0",
     "robots-parse": "^0.0.6",
     "subquest": "^1.5.3",
-    "tag-recon": "^0.1.1",
+    "tag-recon": "^0.2.0",
     "typosquotter": "^0.0.7"
   },
   "devDependencies": {
